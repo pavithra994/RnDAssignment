@@ -1,1 +1,1 @@
-please create input.txt file in C:\Home directory.
+input.txt and output.txt files location - static\
