@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from input.views import input_file
+from input.views import input_file, input_file_ajax
 from output.views import output_page
 from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('input/',input_file),
+    path('input_ajax/',input_file_ajax),
     path('output/',output_page),
-    path('', index)
+    path('', index),
 ]
